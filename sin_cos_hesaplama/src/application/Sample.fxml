@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="482.0" prefWidth="493.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="application.SampleController">
+   <children>
+      <TextField layoutX="153.0" layoutY="30.0" promptText="x degeri" />
+      <TextField layoutX="153.0" layoutY="60.0" promptText="y degeri" />
+      <ListView fx:id="list_sin" layoutX="21.0" layoutY="165.0" prefHeight="200.0" prefWidth="79.0" />
+      <ListView fx:id="list_cos" layoutX="121.0" layoutY="165.0" prefHeight="200.0" prefWidth="79.0" />
+      <ListView fx:id="list_sonuc" layoutX="230.0" layoutY="165.0" prefHeight="200.0" prefWidth="79.0" />
+      <Button fx:id="btn_hesapla" layoutX="153.0" layoutY="100.0" mnemonicParsing="false" onAction="#btn_hesapla_click" text="hesapla" />
+      <Button fx:id="btn_temizle" layoutX="256.0" layoutY="94.0" mnemonicParsing="false" onAction="#btn_temzle_click" text="temizle" />
+      <Button fx:id="btn_list_ekle" layoutX="339.0" layoutY="181.0" mnemonicParsing="false" onAction="#btn_list_ekle_click" text="listeye ekle" />
+      <Button fx:id="btn_list_sil" layoutX="339.0" layoutY="229.0" mnemonicParsing="false" onAction="#btn_list_sil_click" text="listeyi sil" />
+      <Label layoutX="30.0" layoutY="14.0" text="sin(x) cos(y) " />
+      <Label layoutX="21.0" layoutY="142.0" text="sin(x)" />
+      <Label layoutX="103.0" layoutY="150.0" text="cos(x)" />
+      <Label layoutX="251.0" layoutY="150.0" text="sonuc" />
+   </children>
+</AnchorPane>
